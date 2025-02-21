@@ -5,8 +5,6 @@
 
 # Set working directory:
 setwd("YOURWORKINGDIRECTORY")
-setwd("~/Dropbox/Enallagma_Anjali_2021/ManuscriptWingShape_Data_Rcode")
-
 
 ##GPA AND ANALYZING WING SHAPE
 

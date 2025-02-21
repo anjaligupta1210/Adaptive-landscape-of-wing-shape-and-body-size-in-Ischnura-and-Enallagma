@@ -1,7 +1,7 @@
 #Checked on 2025.02.21 for JEB resubmission
 
 # Set working directory:
-setwd("~/Dropbox/Enallagma_Anjali_2021/ManuscriptWingShape_Data_Rcode")
+setwd("YOURWORKINGDIRECTORY")
 
 library(tidyr)
 library(dplyr)

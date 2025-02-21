@@ -2,7 +2,7 @@
 #Code - Anjali Gupta
 
 #Set working directory
-setwd("~/Dropbox/Enallagma_Anjali_2021/ManuscriptWingShape_Data_Rcode")
+setwd("YOURWORKINGDIRECTORY")
 
 #import datasets
 
