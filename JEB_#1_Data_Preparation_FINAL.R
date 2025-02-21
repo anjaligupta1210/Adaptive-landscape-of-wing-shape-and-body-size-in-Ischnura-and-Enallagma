@@ -222,8 +222,8 @@ DataPC$LD12 <- DataPC$LD1^2
 
 #write.csv(DataPC,"DataPC.csv")
 
-#Now, the date is created at your WD. We then made two manual changes to this data
-#replace the first column (which is just number from 1 to x) by a column titled "Ind_ID" that concatenate "Season_ID" and "Genus". It was done retrpspectively like this as some replicates of ID from different years were noticed at some later part of the analyses
+#Now, the data is created at your WD. We then made two manual changes to this data
+#replace the first column (which is just number from 1 to x) by a column titled "Ind_ID" that concatenate "Season_ID" and "Genus". It was done retrospectively like this as some replicates of ID from different years were noticed at some later part of the analyses
 #similarly, a typo in a few labels of the column "locale" was identified through revisions. Here, some locale was written with Swedish vowels with umlauts and circles in some cases but not all others. We thus manually changed these names to use English alphabets. An example is "H<f6>je <c5> 14" -> "Hoje_A_14". At the same time of doing this, we also made some abbreviation more explicit. "Gerp" -> "Genarp" to make downstream analyses more intuitive
 #We then save the file as "DataPC_sorted_locale_fixed.csv". This is the data used for all analyses
 

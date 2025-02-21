@@ -22,7 +22,7 @@ library(broom)
 
 # The purpose of this chunk of code is to evaluate selection gradients per location, rather than the species as a whole. 
 
-# First, arrange data in ways that we want to analyze (almost the same as the pervious code but we prefer this so that this chunk is not dependent of the former)
+# First, arrange data in ways that we want to analyze (almost the same as the previous code but we prefer this so that this chunk is not dependent of the former)
 
 DataPC <- read.csv("DataPC_sorted_locale_fixed.csv") %>% group_by(Season, Genus_, Locale) %>%
 				mutate(		male_mean_fitness = mean(Copula),
