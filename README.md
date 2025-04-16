@@ -1,55 +1,309 @@
-# Data and code for [Persistence of the ecological niche in pond damselflies underlies a stable adaptive zone despite varying selection](https://www.biorxiv.org/content/10.1101/2022.10.19.512907v3)
+# Persistence of the ecological niche in pond damselflies underlies a stable adaptive zone despite varying selection
 
-### Authors
+**Authors**
 
 Anjali Gupta, Erik I. Svensson, Henrik Frietsch and Masahito Tsuboi
 
-### Contact
+**Contact**
 
-masa.tsuboi@gmail.com 
+[masa.tsuboi@gmail.com](mailto:masa.tsuboi@gmail.com)
 
 ### Description
 
 This data package contains morphological and ecological data of two pond damselfly species, *Ischnura elegans* and *Enallagma cyathigerum*, from southern Sweden. Data were obtained by the authors. Code was written by Anjali Gupta and Masahito Tsuboi.
 
-## Data Files
+**Data Files**
 
-### Data is available in 
+**Data is available in**
 
-1. [Is_updated.csv](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/Is_updated.csv): Data file for opportunity of sexual selection and male mating success - derived from community sampling from 2018-2021. Units are specified in the main text.
-2. [DataPC_sorted_locale_fixed.csv](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/DataPC_sorted_locale_fixed.csv): Data file for wing shape and body size PC components with intuitive locale names to evaluate selection gradients. Units are specified in the main text.
-3. [Data_LMRenamed.csv](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/Data_LMRenamed.xlsx): Data file for repeated measurements of same specimens to evaluate repeatability. Units are pixels.
-4. [Data.csv](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/Data.csv): Raw data for all specimens of Ischnura and Enallagma focused sampling. All data used for the presented analyses are in data file #2. This is for archiving purpose only.
-5. [CommunitySampling_2018.csv](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/CommunitySampling_2018.csv): Raw data for Odonata community sampling for 2018. Each entry represent a observation.
-6. [CommunitySampling_2019.csv](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/CommunitySampling_2019.csv): Raw data for Odonata community sampling for 2019. Each entry represent a observation.
-7. [CommunitySampling_2020.csv](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/CommunitySampling_2020.csv): Raw data for Odonata community sampling for 2020. Each entry represent a observation.
-8. [CommunitySampling_2021.csv](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/CommunitySampling_2021.csv): Raw data for Odonata community sampling for 2021. Each entry represent a observation.
+1. **Is_updated.csv**: Data file for opportunity of sexual selection and male mating success - derived from community sampling from 2018-2021. Units are specified in the main text. A description to each column in the data can be found below -
 
+   Species: *Ischnura elegans* / *Enallagma cyathigerum,*
 
-## R Code 
+   Locale: Location site of specimen collected,
 
-### R code is available in 
+   MaleMatingSuccess: mean proportion of male (belonging to one species) mating at a particular locale in one field season
 
-1. [JEB_#1_Data_Preparation_FINAL.R](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/JEB_%231_Data_Preparation_FINAL.R): Code for Generalized Procustes Analysis, Principal Component Analysis, and landmarking repeatability. This code reorganizes [Data.xlsx](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/Data.xlsx) to produce [DataPC_sorted_locale_fixed.csv](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/DataPC_sorted_locale_fixed.csv)
-2. [JEB_#2_Global_Comparisons_FINAL.R](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/JEB_%232_Global_Comparisons_FINAL.R): Code to evaluate selection per species and choose best models.
-3. [JEB_#3_Population_Comparisons_FINAL.R](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/JEB_%233_Population_Comparisons_FINAL.R): Code to evaluate selection per population and choose best models.
-4. [JEB_#4_prereq_OppSel_FINAL.R](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/JEB_%234_Selection_and_ecology_FINAL.R): Code to calculate opportunity for sexual selection and male mating success estimates. This code reorganizes [CommunitySampling_2018.xlsx](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/CommunitySampling_2018.xlsx), [CommunitySampling_2019.xlsx](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/CommunitySampling_2019.xlsx), [CommunitySampling_2020.xlsx](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/CommunitySampling_2020.xlsx), and [CommunitySampling_2021.xlsx](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/CommunitySampling_2021.xlsx) to produce [Is_updated.csv](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/Is_updated.csv)
-5. [JEB_#4_Selection_and_ecology_FINAL.R](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/JEB_%234_prereq_OppSel_FINAL.R): Code to summarize mating system parameters per population per year per species, Table S8, Table S9, Figure 5 and Figure S8.
-6. [JEB_#5_OtherFigures_FINAL.R](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/JEB_%235_OtherFigures_FINAL.R): Code for Figure 3, Figure S6, Figure S7, Figure S10
-7. [Figure S2.R](https://github.com/anjaligupta1210/Adaptive-landscape-of-wing-shape-and-body-size-in-Ischnura-and-Enallagma/blob/main/Figure%20S2.R): Code for Figure S2.
+   Is: opportunity for sexual selection ( variance in male mating success / ((average male mating success)^2) )
 
+   Year: Year/Field season of specimen collection
 
-## Wing Images 
+   n: frequency
+2. **DataPC_sorted_locale_fixed.csv**: Data file for wing shape and body size PC components with intuitive locale names to evaluate selection gradients. Units are specified in the main text. A description to each column in the data can be found below -
 
-### Wing images used in this study are archived in three folders
+   Ind_ID: Unique ID for each specimen,
 
-1. Ischnura2020.zip: Wing images from *Ischnura elegans* samples collected in 2020.
-2. Ischnura2021.zip: Wing images from *Ischnura elegans* samples collected in 2021.
-3. Enallagma2021.zip: Wing images from *Enallagma cyathigerum* samples collected in 2021.
-4. TrainingSetImages.zip: Wing images used to train ml-morph for landmarking.
+   Season_ID: ID for each specimen for a particular field season,
 
-**All filenames in the wing images folders follow our custom nomenclature "oi_IMG_XXX_id_XXX_wi_XX.jpg"**
-*oi = original image*
-*IMG_XXX = This 'XXX' is not informative and was just used for our records while imaging wings*
-*id_XXX = This 'XXX' corresponds to the original ID of the specimen in the **Data.csv** datasheet*
-*wi_XX = This 'XX' can take four values - 'rh','lh','rf','lf' corresponding to right/left hindwing/forewing* 
+   Genus, Genus_, Species: Genus and species name for the specimen,
+
+   Date: Date of specimen collection,
+
+   Locale: Location site of specimen collected,
+
+   Cop_ID: ID for individuals caught in a couple (the male and female caught in a couple get the same ID), NA for individuals that are caught not mating,
+
+   Sex: Male/Female,
+
+   Age: Mature/Immature based on age at the time of specimen collection,
+
+   Copula_, Copula: Single (0)/ Couple (1) - based on whether the individual caught non-mating / mating,
+
+   Thor_col: Thorax color, NA if not scored,
+
+   Col_phase: NA for this dataset,
+
+   Parasite: Number of mites on the body of the specimen when captured,
+
+   Morph: Female color morph type, NA for males,
+
+   Wing: Wing length of the specimen,
+
+   Thorax: Thorax length of the specimen,
+
+   Length: Total body length of the specimen,
+
+   Abdomen: Abdomen length of the specimen,
+
+   S_4: S4 segment / abdomenal width of the specimen,
+
+   Eggs: No of eggs laid by a female caught in a couple (NA for males and single-caught females)
+
+   Season: Year of field season
+
+   WingSide: Right/left wing specimen
+
+   WingID: Forewing/ Hindwing
+
+   X0,Y0 - X16,Y16: X and Y coordinates of the 17 landmarks on wing
+
+   GPA COORDS NEXT: NA for this data
+
+   X.1,Y.1 - X.17,Y.17:  Generalized Procrustes analysis transformed X and Y coordinates of the 17 landmarks on wing 
+
+   MatingSuccess: mean proportion of male (belonging to one species) mating at a particular locale in one field season
+
+   Fecundity: mean-standardized eggs laid by a female, NA for males and single-caught females
+
+   LD1: Component values of major axis - LD1 from linear discriminant function analysis on wing shape
+
+   PC1_shape - PC5_shape:  Component values of PC1-PC5 axes from principal component analysis on wing shape
+
+   PC1size - PC2_size: Component values of PC1-PC2 axes from principal component analysis on body size
+
+   PC1_shape2 - PC5_shape2: Squared values of PC1_shape - PC5_shape
+
+   PC1size2 - PC2_size2: Squared values of PC1size - PC2_size
+
+   LD12: Squared values of LD1
+3. **Data_LMRenamed.csv**: Data file for repeated measurements of same specimens to evaluate repeatability. Units are pixels. A description to each column in the data can be found below -
+
+   Season_ID: ID for each specimen for a particular field season,
+
+   Genus, Species: Genus and species name for the specimen,
+
+   Date: Date of specimen collection,
+
+   Locale: Location site of specimen collected,
+
+   Cop_ID: ID for individuals caught in a couple (the male and female caught in a couple get the same ID), NA for individuals that are caught not mating,
+
+   Sex: Male/Female,
+
+   Age: Mature/Immature based on age at the time of specimen collection,
+
+   Copula_, Copula: Single (0)/ Couple (1) - based on whether the individual caught non-mating / mating,
+
+   Thor_col: Thorax color, NA if not scored,
+
+   Col_phase: NA for this dataset,
+
+   Parasite: Number of mites on the body of the specimen when captured,
+
+   Morph: Female color morph type, NA for males,
+
+   Wing: Wing length of the specimen,
+
+   Thorax: Thorax length of the specimen,
+
+   Length: Total body length of the specimen,
+
+   Abdomen: Abdomen length of the specimen,
+
+   S_4: S4 segment / abdomenal width of the specimen,
+
+   Eggs: No of eggs laid by a female caught in a couple (NA for males and single-caught females)
+
+   Season: Year of field season
+
+   WingSide: Right/left wing specimen
+
+   WingID: Forewing/ Hindwing
+
+   X0,Y0 - X16,Y16: X and Y coordinates of the 17 landmarks on wing
+
+   GPA COORDS NEXT: NA for this data
+
+   X.1,Y.1 - X.17,Y.17:  Generalized Procrustes analysis transformed X and Y coordinates of the 17 landmarks on wing 
+4. **Data.csv**: Raw data for all specimens of Ischnura and Enallagma focused sampling. All data used for the presented analyses are in data file #2. This is for archiving purpose only. A description to each column in the data can be found below -
+
+   Season_ID: ID for each specimen for a particular field season,
+
+   Genus, Species: Genus and species name for the specimen,
+
+   Date: Date of specimen collection,
+
+   Locale: Location site of specimen collected,
+
+   Cop_ID: ID for individuals caught in a couple (the male and female caught in a couple get the same ID), NA for individuals that are caught not mating,
+
+   Sex: Male/Female,
+
+   Age: Mature/Immature based on age at the time of specimen collection,
+
+   Copula_, Copula: Single (0)/ Couple (1) - based on whether the individual caught non-mating / mating,
+
+   Thor_col: Thorax color, NA if not scored,
+
+   Col_phase: NA for this dataset,
+
+   Parasite: Number of mites on the body of the specimen when captured,
+
+   Morph: Female color morph type, NA for males,
+
+   Wing: Wing length of the specimen,
+
+   Thorax: Thorax length of the specimen,
+
+   Length: Total body length of the specimen,
+
+   Abdomen: Abdomen length of the specimen,
+
+   S_4: S4 segment / abdomenal width of the specimen,
+
+   Eggs: No of eggs laid by a female caught in a couple (NA for males and single-caught females)
+
+   Season: Year of field season
+
+   WingSide: Right/left wing specimen
+
+   WingID: Forewing/ Hindwing
+
+   X0,Y0 - X16,Y16: X and Y coordinates of the 17 landmarks on wing
+
+   GPA COORDS NEXT: NA for this data
+
+   X.1,Y.1 - X.17,Y.17:  Generalized Procrustes analysis transformed X and Y coordinates of the 17 landmarks on wing
+5. **CommunitySampling_2018.csv**: Raw data for Odonata community sampling for 2018. Each entry represents a observation. A description to each column in the data can be found below -
+
+   Date: Date of specimen collection,
+
+   Time: Time of specimen collection,
+
+   Locale: Location site of specimen collected,
+
+   Species: Genus and species name for the specimen,
+
+   Age: Mature/Immature based on age at the time of specimen collection,
+
+   Morph: Female color morph type, NA for males,
+
+   Copulation.status: Single (0)/ Couple (1) - based on whether the individual caught non-mating / mating,
+
+   Parasites: Number of mites on the body of the specimen when captured,
+
+   Catching.time.minutes.: Time (in minutes) spent during specimen collection during one field visit,
+
+   Year: Year of field season,
+
+   Ischunra.elegans.morph: *I. elegans* female color morph type, NA for males and other species,
+
+   Ischunra.elegans.phase: *I. elegans* female color phase type based on thorax color, NA for males and other species
+6. **CommunitySampling_2019.csv**: Raw data for Odonata community sampling for 2019. Each entry represents a observation. A description to each column in the data can be found below -
+
+   Date: Date of specimen collection,
+
+   Time: Time of specimen collection,
+
+   Locale: Location site of specimen collected,
+
+   Species: Genus and species name for the specimen,
+
+   Age: Mature/Immature based on age at the time of specimen collection,
+
+   Morph: Female color morph type, NA for males,
+
+   Copulation.status: Single (0)/ Couple (1) - based on whether the individual caught non-mating / mating,
+
+   Parasites: Number of mites on the body of the specimen when captured,
+
+   Catching.time.minutes.: Time (in minutes) spent during specimen collection during one field visit,
+
+   Year: Year of field season,
+
+   Ischunra.elegans.morph: *I. elegans* female color morph type, NA for males and other species,
+
+   Ischunra.elegans.phase: *I. elegans* female color phase type based on thorax color, NA for males and other species
+7. **CommunitySampling_2020.csv**: Raw data for Odonata community sampling for 2020. Each entry represents a observation. A description to each column in the data can be found below -
+
+   Date: Date of specimen collection,
+
+   Time: Time of specimen collection,
+
+   Locale: Location site of specimen collected,
+
+   Species: Genus and species name for the specimen,
+
+   Age: Mature/Immature based on age at the time of specimen collection,
+
+   Morph: Female color morph type, NA for males,
+
+   Copulation.status: Single (0)/ Couple (1) - based on whether the individual caught non-mating / mating,
+
+   Parasites: Number of mites on the body of the specimen when captured,
+
+   Catching.time.minutes.: Time (in minutes) spent during specimen collection during one field visit,
+
+   Year: Year of field season,
+
+   Ischunra.elegans.morph: *I. elegans* female color morph type, NA for males and other species,
+
+   Ischunra.elegans.phase: *I. elegans* female color phase type based on thorax color, NA for males and other species
+8. **CommunitySampling_2021.csv**: Raw data for Odonata community sampling for 2021. Each entry represents a observation. A description to each column in the data can be found below -
+
+   Date: Date of specimen collection,
+
+   Time: Time of specimen collection,
+
+   Locale: Location site of specimen collected,
+
+   Species: Genus and species name for the specimen,
+
+   Age: Mature/Immature based on age at the time of specimen collection,
+
+   Morph: Female color morph type, NA for males,
+
+   Copulation.status: Single (0)/ Couple (1) - based on whether the individual caught non-mating / mating,
+
+   Parasites: Number of mites on the body of the specimen when captured,
+
+   Catching.time.minutes.: Time (in minutes) spent during specimen collection during one field visit,
+
+   Year: Year of field season,
+
+   Ischunra.elegans.morph: *I. elegans* female color morph type, NA for males and other species,
+
+   Ischunra.elegans.phase: *I. elegans* female color phase type based on thorax color, NA for males and other species
+
+**Code/Software**
+
+**R Code is available in**
+
+1. **JEB_#1_Data_Preparation_FINAL.R**: Code for Generalized Procustes Analysis, Principal Component Analysis, and landmarking repeatability. This code reorganizes **Data.csv** to produce **DataPC_sorted_locale_fixed.csv**
+2. **JEB_#2_Global_Comparisons_FINAL.R**: Code to evaluate selection per species and choose best models.
+3. **JEB_#3_Population_Comparisons_FINAL.R**: Code to evaluate selection per population and choose best models.
+4. **JEB_#4_prereq_OppSel_FINAL.R**: Code to calculate opportunity for sexual selection and male mating success estimates. This code reorganizes **CommunitySampling_2018.csv**, **CommunitySampling_2019.csv**, **CommunitySampling_2020.csv**, and **CommunitySampling_2021.csv** to produce **Is_updated.csv**
+5. **JEB_#4_Selection_and_ecology_FINAL.R**: Code to summarize mating system parameters per population per year per species, Table S8, Table S9, Figure 5 and Figure S8.
+6. **JEB_#5_OtherFigures_FINAL.R**: Code for Figure 3, Figure S6, Figure S7, Figure S10
+7. **Figure S2.R**: Code for Figure S2.
+
